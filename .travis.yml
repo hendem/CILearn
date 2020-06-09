@@ -3,6 +3,6 @@ services:
     - docker
 
 script:
-    - docker build -t mhenderson99/node .
-    - docker images mhenderson99/node
+    - docker build -t hendem/node .
+    - docker images hendem/node
     
