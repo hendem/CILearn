@@ -6,3 +6,11 @@ script:
     - docker build -t hendem/node .
     - docker images hendem/node
     
+before_deploy:
+    - docker login -u mhenderson99 -p 01e91ca9-1dd6-4419-bcc8-cd6d82f8a2f9
+
+deploy:
+    provider: script
+    script: docker push hendem/node
+    on:
+        branch: master
