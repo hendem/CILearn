@@ -1,0 +1,8 @@
+sudo: required
+services:
+    - docker
+
+script:
+    - docker build -t mhenderson99/node .
+    - docker images mhenderson99/node
+    
