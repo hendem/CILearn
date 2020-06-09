@@ -3,14 +3,14 @@ services:
     - docker
 
 script:
-    - docker build -t hendem/node .
-    - docker images hendem/node
+    - docker build -t mhenderson99/node .
+    - docker images mhenderson99/node
     
 before_deploy:
     - docker login -u mhenderson99 -p 01e91ca9-1dd6-4419-bcc8-cd6d82f8a2f9
 
 deploy:
     provider: script
-    script: docker push hendem/node
+    script: docker push mhenderson99/node
     on:
         branch: master
