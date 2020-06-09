@@ -1,6 +1,6 @@
 FROM node
 
-RUN mkdir /usr/scr/app
+RUN mkdir /usr/src/app
 
 WORKDIR /usr/src/app
 
